@@ -129,7 +129,6 @@ section{
 }
 
 .about-me-col{
-  /* margin: 1rem auto; */
   background-color: #fff;
   color: #000;
   padding: 1rem;
@@ -143,6 +142,23 @@ section{
 .half-highlight{
   font-weight: 700 !important;
   /* background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #244ea9 50%); */
+}
+
+/* Skills */
+
+.skill-group{
+  border: 0.1rem solid #2f68df;
+  border-radius: 5px;
+}
+
+.skill{
+  margin : 1rem auto !important;
+}
+
+.skill-icon{
+  width:auto;
+  height: 1.2rem;
+  margin-right : 0.5rem;
 }
 
 /* projects */
