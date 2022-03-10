@@ -8,6 +8,8 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Scroll from "./components/Scroll";
 import ProfileImage from "./images/about-me-img/profile-img.png";
+import arrowSm from "./images/sm-arrow.png";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -52,7 +54,7 @@ const App = () => {
         </h1>
         <h2 className="mt-5">노진현 입니다.</h2>
         <hr className="section-divider" />
-        <div className="d-inline intor-desc">
+        <div className="intor-desc">
           <p className="intro-desc">
             다양한 경험을 토대로 새로운 환경과 변화에 맞춰 잘 해낼 수 있습니다.
           </p>
@@ -60,6 +62,17 @@ const App = () => {
             사용자의 관점에서 많이 생각하고 문제 해결 과정을 즐길 줄 아는
             개발자입니다.
           </p>
+        </div>
+        <div className="d-block text-center">
+          <img className="d-inline-block blink" width="50rem"
+            src={arrowSm}
+            alt="arrow"
+          />
+          <br/>
+          <img className="d-inline-block blink-second" width="30rem"
+            src={arrowSm}
+            alt="arrow"
+          />
         </div>
       </section>
 
