@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-
+import topBtn from '../images/top-button.png'
 const Scroll = () => {
 
     const [ScrollY, setScrollY] = useState(0); // 스크롤값 저장
@@ -44,7 +44,7 @@ const Scroll = () => {
         className={BtnStatus ? "topBtn active" : "topBtn"} // 버튼 노출 여부
         onClick={handleTop} // 버튼 클릭시 함수 호출
       >
-      TOP
+      <img src={topBtn} width="50px" height="50px"/>
       </button>
     </div>
   )
