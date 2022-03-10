@@ -8,12 +8,10 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Scroll from "./components/Scroll";
 import ProfileImage from "./images/about-me-img/profile-img.png";
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
 const App = () => {
-    
   return (
     <div>
       <Scroll />
@@ -100,6 +98,22 @@ const App = () => {
                 </span>
               </Col>
             </Row>
+            <Button
+              className="about-me-btn mt-5"
+              onClick={() =>
+                (window.location.href = "https://github.com/nohhow")
+              }
+            >
+              <img className="about-me-icon" src={gitLogo} alt="Github" />
+            </Button>
+            <Button
+              className="about-me-btn mt-5"
+              onClick={() =>
+                (window.location.href = "https://nohhow.github.io")
+              }
+            >
+              <img className="about-me-icon" src={blogLogo} alt="Blog" />
+            </Button>
           </Container>
         </Fade>
       </section>
@@ -107,7 +121,7 @@ const App = () => {
       <section id="skills">
         <Fade>
           <h1 className="section-title">SKILLS</h1>
-          <Skills/>
+          <Skills />
         </Fade>
       </section>
 

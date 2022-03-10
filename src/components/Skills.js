@@ -94,21 +94,37 @@ const Skills = ()=>{
     
   return (
     <div>
+        <h3>Certificate</h3>
+        <div className="skill-group mb-5 py-3">
+            <Container>
+              <Row>
+                <Col sm={3} className="skill">
+                  <span>정보처리기사</span>
+                </Col>
+                <Col sm={3} className="skill">
+                  <span>중등학교 정교사 2급 정보.컴퓨터</span>
+                </Col>
+                <Col sm={3} className="skill">
+                  <span>TOEIC : 740</span>
+                </Col>
+              </Row>
+            </Container>
+        </div>
         <h3>main</h3>
-        <div className="skill-group mb-5">
+        <div className="skill-group mb-5 py-3">
             <Container>
               <Row>
                 {skillData.map((data) => (
                   <Col key={data.id} onMouseOver={()=> handleMouseOver(`${data.id}`)} onMouseOut={()=>handleMouseOut()} sm={3} className="skill">
                     <img className="skill-icon" src={data.icon} alt="icon"/>
-                    <span>{data.title}{data.isHover ? <ProgressBar variant="primary" now={data.rating} label=""/> : ""}</span>
+                    <span>{data.title}{data.isHover ? <ProgressBar className="mx-5" variant="primary" now={data.rating} label={data.rating}/> : ""}</span>
                   </Col>
                 ))}
               </Row>
             </Container>
         </div>
         <h3>sub</h3>
-        <div className="skill-group my-3">
+        <div className="skill-group my-3 py-3">
             <Container>
               <Row>
                 <Col sm={3} className="skill">
