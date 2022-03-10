@@ -202,11 +202,37 @@ body {
   transition: all .15s linear;
   color: #000;
   text-decoration: none;
+  height: 100%;
 }
 
 .card:hover{
   box-shadow:0 0 16px 0 rgba(255, 255, 255, 0.5)
 }
+
+@media (max-width : 768px) {
+  .card-img-container{
+    display: flex;
+    align-items: center;
+    height:15rem;
+    object-fit: fill;
+    overflow:hidden;
+  }
+}
+@media (min-width : 769px) {
+  .card-img-container{
+    display: flex;
+    align-items: center;
+    height:18rem;
+    object-fit: fill;
+    overflow:hidden;
+  }
+}
+
+.card-img-container>img{
+  max-height:auto;
+  width: 100%;
+}
+
 
 .card-body > a{
   transition: all .15s linear;

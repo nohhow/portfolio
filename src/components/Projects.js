@@ -5,8 +5,12 @@ import Slider from "react-slick";
 // Image
 import baThumbnail from "../images/project-img/ba-thumbnail.png";
 import comThumbnail from "../images/project-img/com-thumbnail.png";
-import nfcThumbnail from "../images/project-img/nfc-thumbnail.png";
 import sasangThumbnail from "../images/project-img/sasang-thumbnail.png";
+import capThumbnail from "../images/project-img/cap-thumbnail.jpeg";
+import pThumbnail from "../images/project-img/p-thumbnail.jpeg";
+import classThumbnail from "../images/project-img/class-thumbnail.png";
+import habitThumbnail from "../images/project-img/habit-thumbnail.jpeg";
+import hnuThumbnail from "../images/project-img/hnu-thumbnail.png";
 import ba1 from "../images/project-img/ba-1.png";
 import ba2 from "../images/project-img/ba-2.png";
 import ba3 from "../images/project-img/ba-3.png";
@@ -21,6 +25,20 @@ import nfc1 from "../images/project-img/nfc-1.png";
 import nfc2 from "../images/project-img/nfc-2.png";
 import nfc3 from "../images/project-img/nfc-3.png";
 import nfc4 from "../images/project-img/nfc-4.png";
+import cap1 from "../images/project-img/cap-1.jpeg";
+import p1 from "../images/project-img/p-1.jpeg";
+import p2 from "../images/project-img/p-2.jpeg";
+import p3 from "../images/project-img/p-3.jpeg";
+import p4 from "../images/project-img/p-4.jpeg";
+import class1 from "../images/project-img/class-1.png";
+import class2 from "../images/project-img/class-2.png";
+import class3 from "../images/project-img/class-3.png";
+import class4 from "../images/project-img/class-4.png";
+import class5 from "../images/project-img/class-5.png";
+import habit1 from "../images/project-img/habit-1.jpeg";
+import habit2 from "../images/project-img/habit-2.jpeg";
+import habit3 from "../images/project-img/habit-3.jpeg";
+import hnu1 from "../images/project-img/hnu-1.png";
 
 const Projects = () => {
   const settings = {
@@ -102,7 +120,7 @@ const Projects = () => {
     },
     {
       id: "4",
-      img: `${nfcThumbnail}`,
+      img: `${nfc1}`,
       title: "BS태그",
       subtitle: "NFC Read/Write 안드로이드 앱",
       tech: ["Java", "AndroidStudio"],
@@ -120,10 +138,123 @@ const Projects = () => {
       ],
       isClicked: false,
     },
+    {
+      id: "5",
+      img: `${habitThumbnail}`,
+      title: "My Precious Habit",
+      subtitle: "습관 관리 안드로이드 앱",
+      tech: ["Java", "AndroidStudio, SQLite"],
+      imgs: [`${habitThumbnail}`, `${habit1}`, `${habit2}`, `${habit3}`],
+      type: "개인 프로젝트",
+      detail: [
+        "To-Do 리스트와 유사한 형태의 기본적인 CRUD 기능 구현 및 Database 연동",
+      ],
+      result: [
+        "안드로이드 어플리케이션 생애주기 이해",
+        "Database 연동 안드로이드 앱 개발 경험, SQL 활용 경험",
+      ],
+      isClicked: false,
+    },
+    {
+      id: "6",
+      img: `${hnuThumbnail}`,
+      title: "한남대 공지모아",
+      subtitle: "한남대학교 공지 모아보기 (크롬 확장프로그램) 개발",
+      tech: ["HTML", "CSS", "Javascript", "jQuery", "Bootstrap"],
+      imgs: [`${hnuThumbnail}`, `${hnu1}`],
+      type: "개인 프로젝트",
+      detail: [
+        "한남대학교의 다양한 공지사항이 여러 경로에서 제공되어 접근이 불편하다는 것을 개선하고자 진행한 프로젝트",
+        "크롬 확장프로그램의 프로젝트 구조 이해",
+        "크롬 브라우저 권한을 이용한 '자주 방문한 페이지' 리스트 제공",
+        "종강 시계 구현(종강까지 남은 기간이 실시간 표시'",
+        "iframe기반으로 제작된 학교 홈페이지의 공지사항을 활용하여 단일 페이지에서 모아 볼 수 있도록 함",
+      ],
+      result: [
+        "크롬 브라우저 웹 스토어에 게시",
+        "별도의 홍보 없이 5명의 사용자 확보",
+        "학습한 언어와 라이브러리들을 다양하게 적용해 볼 수 있었던 프로젝트",
+      ],
+      isClicked: false,
+    },
+    {
+      id: "7",
+      img: `${classThumbnail}`,
+      title: "모두의 클래스",
+      subtitle: "온라인 교육 클래스 플랫폼 개발",
+      tech: [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Bootstrap",
+        "PHP",
+        "Apache",
+        "MySQL",
+      ],
+      imgs: [
+        `${classThumbnail}`,
+        `${class1}`,
+        `${class2}`,
+        `${class3}`,
+        `${class4}`,
+        `${class5}`,
+      ],
+      type: "2인 팀 프로젝트",
+      detail: [
+        "구글 클래스룸의 기능 전반을 구현해보고자 프로젝트 진행",
+        "'초대 받아야 입장이 가능한 클래스룸', '해시 함수를 활용한 초대코드 생성기', '게시판', '댓글 기능' 등 구현",
+        "Front, Back-end를 동시에 개발 수행",
+        "AWS EC2를 활용하여 서버 호스팅",
+      ],
+      result: [
+        "Back-end 개발, AWS 서버 호스팅 경험",
+        "Entity간 관계에 대한 고민이 선행되지 못해서 후반부에 다시 관계 정의를 하며 개발에 앞선 설계의 중요성을 되돌아볼 수 있었음",
+      ],
+      isClicked: false,
+    },
+    {
+      id: "8",
+      img: `${pThumbnail}`,
+      title: "한남대 AR 동아리 게시판",
+      subtitle: "한남대학교 AR 동아리 안내 게시판 Demo 개발",
+      tech: ["Unity", "C#", "Vuforia"],
+      imgs: [`${p1}`, `${p2}`, `${p3}`, `${pThumbnail}`, `${p4}`],
+      type: "2인 팀 프로젝트",
+      detail: [
+        "이미지 태그를 활용하여 특정 이미지에 카메라를 비추면 AR 오브젝트로 한남대학교 모든 동아리 안내글과 홍보 영상을 선택하여 볼 수 있도록 구현",
+        "Android SDK를 활용하여 안드로이드 앱 개발",
+        "Vuforia SDK를 활용하여 AR 기능 구현",
+        "Unity로 AR 오브젝트 생성하고 C#으로 스크립트 작성",
+      ],
+      result: [
+        "새로운 개발 분야인 AR 개발을 경험",
+        "한남대학교 2021 총동아리회에 Demo 버전 시연 및 공개",
+      ],
+      isClicked: false,
+    },
+    {
+      id: "9",
+      img: `${capThumbnail}`,
+      title: "시약 장 콘트롤러 임베디드 시스템",
+      subtitle: "[캡스톤 프로젝트] 시약 장 콘트롤러 임베디드 시스템 개발",
+      tech: ["Arduino", "C", "Nextion"],
+      imgs: [`${capThumbnail}`, `${cap1}`],
+      type: "기업 프로젝트 - 명품시스템",
+      detail: [
+        "(주)명품시스템으로부터 '시약 장 콘트롤러 장치 고도화'프로젝트를 의뢰받아 진행",
+        "시약장 콘트롤러는 시약장 내부 공기 순환 장치와 이온클러스터, 잠금장치 등을 제어",
+        "기업 요구사항 분석 및 설계, 개발, 테스트 수행 = 폭포수 모델을 따라 개발 진행",
+        "주요 담당 업무 : 시약장 콘트롤러 장치의 터치 스크린 UI 설계 및 개발",
+      ],
+      result: [
+        "개발 완료 후 제품화 및 유지 보수 진행 중",
+        "기존 콘트롤러 대비 30%이상 단가 절감",
+      ],
+      isClicked: false,
+    },
   ]);
 
   const handleClick = (id) => {
-    console.log(id);
     let newProjectData = projectData.map((data) => {
       if (data.id === id) {
         data.isClicked = true;
@@ -135,6 +266,9 @@ const Projects = () => {
     });
     setProjectData(newProjectData);
     setProjectClicked(true);
+
+    var projectTop = document.querySelector("#projects").offsetTop;
+    window.scrollTo({top:projectTop, behavior:'smooth'});
   };
 
   const handleBackBtn = () => {
@@ -181,8 +315,16 @@ const Projects = () => {
                         <Card.Title>{data.title}</Card.Title>
                         {data.type}
                         <hr />
+                            <div className="tech-stacks">
+                              {data.tech.map((stack, index) => (
+                                <span className="tech-stack text-start" key={index}>
+                                  {stack}
+                                </span>
+                              ))}
+                            </div>
+                        <hr />
                         <Container>
-                        <Row>
+                          <Row>
                             <h3 className="d-flex justify-content-left">
                               수행 업무
                             </h3>
@@ -229,6 +371,7 @@ const Projects = () => {
           <Row>
             {projectData.map((data) => (
               <Col
+                xxl={4}
                 lg={6}
                 md={6}
                 className="my-3 project-card"

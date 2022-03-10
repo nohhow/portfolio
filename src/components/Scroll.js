@@ -25,10 +25,6 @@ const Scroll = () => {
     };
   
     useEffect(() => {
-      console.log("ScrollY is ", ScrollY); // ScrollY가 변화할때마다 값을 콘솔에 출력
-    }, [ScrollY]);
-  
-    useEffect(() => {
       const watch = () => {
         window.addEventListener("scroll", handleScroll);
       };
@@ -44,7 +40,7 @@ const Scroll = () => {
         className={BtnStatus ? "topBtn active" : "topBtn"} // 버튼 노출 여부
         onClick={handleTop} // 버튼 클릭시 함수 호출
       >
-      <img src={topBtn} width="50px" height="50px"/>
+      <img src={topBtn} width="50px" height="50px" alt="TOP"/>
       </button>
     </div>
   )
