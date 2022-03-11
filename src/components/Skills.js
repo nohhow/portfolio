@@ -110,7 +110,7 @@ const Skills = ()=>{
               </Row>
             </Container>
         </div>
-        <h3>main</h3>
+        <h3>Main</h3>
         <div className="skill-group mb-5 py-3">
             <Container>
               <Row>
@@ -123,7 +123,7 @@ const Skills = ()=>{
               </Row>
             </Container>
         </div>
-        <h3>sub</h3>
+        <h3>Sub</h3>
         <div className="skill-group my-3 py-3">
             <Container>
               <Row>

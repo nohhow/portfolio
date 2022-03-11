@@ -182,7 +182,7 @@ body {
 
 .about-me-btn {
   background-color: inherit !important;
-  border: inherit solid 1px !important;
+  border: initial solid 1px !important;
 }
 .about-me-btn:hover {
   background-color: inherit !important;

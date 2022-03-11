@@ -258,7 +258,6 @@ const Projects = () => {
     let newProjectData = projectData.map((data) => {
       if (data.id === id) {
         data.isClicked = true;
-        console.log(data);
       } else {
         data.isClicked = false;
       }
