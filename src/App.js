@@ -25,7 +25,7 @@ const App = () => {
             className="py-3 fixed-top"
           >
             <Navbar.Brand>
-              <Link className="navbar-dark navbar-nav nav-brand" to="/">
+              <Link className="navbar-dark navbar-nav nav-brand" to="/portfolio">
                 노진현의 포트폴리오
               </Link>
             </Navbar.Brand>
@@ -50,7 +50,7 @@ const App = () => {
                 <Nav.Item as="li">
                   <Link
                     className="navbar-dark navbar-nav nav-link"
-                    to="practices"
+                    to="portfolio/practices"
                   >
                     Practices
                   </Link>
@@ -60,9 +60,9 @@ const App = () => {
           </Navbar>
         </nav>
         <Routes>
-          <Route path="/" element={<MainPage />} />
-          <Route path="/practices" element={<ClonePage />} />
-          <Route path="/practices/:id" element={<CloneDetailPage />}/>
+          <Route path="/portfolio" element={<MainPage />} />
+          <Route path="/portfolio/practices" element={<ClonePage />} />
+          <Route path="/portfolio/practices/:id" element={<CloneDetailPage />}/>
         </Routes>
 
         <Footer />

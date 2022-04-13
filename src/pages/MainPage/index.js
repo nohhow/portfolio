@@ -11,6 +11,8 @@ import gitLogo from "../../images/github-icon.png";
 import blogLogo from "../../images/blog-icon.png";
 
 function MainPage() {
+    console.log("rendering")
+
   return (
     <div>
       <section id="intro">

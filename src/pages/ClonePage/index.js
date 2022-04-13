@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function ClonePage() {
   const [posts, setPosts] = useState(["Huffington", "Google"]);
-    
+
   return (
     <div>
       <section id="practices">
@@ -26,7 +26,7 @@ function ClonePage() {
             <Row>
               {posts.map((data) => (
                 <Col sm={12} key={data}>
-                    <Link to={`/practices/${data}`}>
+                    <Link to={`portfolio/practices/${data}`}>
                         {data}
                     </Link>
                 </Col>
