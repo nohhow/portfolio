@@ -342,3 +342,37 @@ body {
 .textGrey{
   color: #666;
 }
+
+@media (max-width: 768px) {
+  .cloneContainer {
+    padding: 7% 5%;
+  }
+}
+@media (min-width: 769px) {
+  .cloneContainer {
+    padding: 7% 10%;
+  }
+}
+
+/* Horizontal scrolling text animation */
+.move_bar {
+  width: 100%;
+  background-color: #fff;
+  color: black;
+  overflow-x: hidden;
+}
+
+.move_bar_content {
+  display: block; /* Important to give the content a width */
+  white-space:nowrap;
+  width: 100%;
+  transform: translateX(100%); /* Animation start out of the screen */
+
+  /* Add the animation */
+  animation: move 30s linear infinite /* infinite make reapeat the animation indefinitely */;
+}
+
+/* Create the animation */
+@keyframes move {
+  to { transform: translateX(-100%); }
+}
