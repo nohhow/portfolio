@@ -19,7 +19,7 @@ function ClonePage() {
             <a className="textGrey" href="http://web.archive.org/">
               Web Archive
             </a>
-            에서 과거 웹 사이트를 참고합니다.
+            에서 과거 웹 사이트를 참고
           </p>
           <hr className="section-divider" />
           <Container>
