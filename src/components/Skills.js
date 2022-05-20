@@ -117,7 +117,8 @@ const Skills = ()=>{
                 {skillData.map((data) => (
                   <Col key={data.id} onMouseOver={()=> handleMouseOver(`${data.id}`)} onMouseOut={()=>handleMouseOut()} sm={3} className="skill">
                     <img className="skill-icon" src={data.icon} alt="icon"/>
-                    <span>{data.title}{data.isHover ? <ProgressBar className="mx-5" variant="primary" now={data.rating} label={data.rating}/> : ""}</span>
+                    <p>{data.title}</p>
+                    {data.isHover ? <ProgressBar className="mx-5" variant="primary" now={data.rating} label={data.rating}/> : ""}
                   </Col>
                 ))}
               </Row>
