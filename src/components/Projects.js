@@ -3,6 +3,7 @@ import { Container, Card, Row, Col } from "react-bootstrap";
 import Slider from "react-slick";
 
 // Image
+import nbThumbnail from "../images/project-img/nb-thumbnail.png";
 import baThumbnail from "../images/project-img/ba-thumbnail.png";
 import comThumbnail from "../images/project-img/com-thumbnail.png";
 import sasangThumbnail from "../images/project-img/sasang-thumbnail.png";
@@ -11,6 +12,10 @@ import pThumbnail from "../images/project-img/p-thumbnail.jpeg";
 import classThumbnail from "../images/project-img/class-thumbnail.png";
 import habitThumbnail from "../images/project-img/habit-thumbnail.jpeg";
 import hnuThumbnail from "../images/project-img/hnu-thumbnail.png";
+import nb1 from "../images/project-img/nb-1.png";
+import nb2 from "../images/project-img/nb-2.png";
+import nb3 from "../images/project-img/nb-3.gif";
+import nb4 from "../images/project-img/nb-4.png";
 import ba1 from "../images/project-img/ba-1.png";
 import ba2 from "../images/project-img/ba-2.png";
 import ba3 from "../images/project-img/ba-3.png";
@@ -54,6 +59,27 @@ const Projects = () => {
   const [projectData, setProjectData] = useState([
     {
       id: "1",
+      img: `${nbThumbnail}`,
+      title: "No Bakery 온라인 스토어",
+      subtitle: "온라인 스토어 형태를 가진 베이커리 온라인 주문 사이트",
+      tech: ["HTML", "CSS", "React.js", "Express.js", "MySQL", "Netlify", "Heroku"],
+      imgs: [`${nb1}`, `${nb2}`, `${nb3}`, `${nb4}`],
+      type: "개인 프로젝트",
+      detail: [
+        "기본적으로 온라인 쇼핑몰의 형태이지만 가상 재화인 하트 사용",
+        "서버와 클라이언트를 구분하여 개발하고 각각 따로 배포 진행",
+        "도메인 구매 및 적용",
+        "기능 소개는 https://github.com/nohhow/no-bakery README.md에 작성",
+      ],
+      result: [
+        "하나부터 열까지 혼자 구상하고 개발한 온라인 주문 사이트",
+        "사용 가능한 웹 기술들을 대부분 활용하여 Front, Back-end 모두 혼자서 다뤄본 프로젝트",
+        "추가적인 내용은 https://github.com/nohhow/no-bakery README.md 참고",
+      ],
+      isClicked: false,
+    },
+    {
+      id: "2",
       img: `${baThumbnail}`,
       title: "비즈니스 자동화 관리 웹",
       subtitle: "스티커/라벨 생산업체 비즈니스 자동화 관리 도구",
@@ -72,7 +98,7 @@ const Projects = () => {
       isClicked: false,
     },
     {
-      id: "2",
+      id: "3",
       img: `${sasangThumbnail}`,
       title: "AI 사상체질 진단",
       subtitle: "AI 사상체질 진단 모바일 웹 & 안드로이드 앱",
@@ -99,7 +125,7 @@ const Projects = () => {
       isClicked: false,
     },
     {
-      id: "3",
+      id: "4",
       img: `${comThumbnail}`,
       title: "WEM 개발자 커뮤니티",
       subtitle: "WEM 노코드 개발자 커뮤니티 웹",
@@ -119,7 +145,7 @@ const Projects = () => {
       isClicked: false,
     },
     {
-      id: "4",
+      id: "5",
       img: `${nfc1}`,
       title: "BS태그",
       subtitle: "NFC Read/Write 안드로이드 앱",
@@ -139,7 +165,7 @@ const Projects = () => {
       isClicked: false,
     },
     {
-      id: "5",
+      id: "6",
       img: `${habitThumbnail}`,
       title: "My Precious Habit",
       subtitle: "습관 관리 안드로이드 앱",
@@ -156,7 +182,7 @@ const Projects = () => {
       isClicked: false,
     },
     {
-      id: "6",
+      id: "7",
       img: `${hnuThumbnail}`,
       title: "한남대 공지모아",
       subtitle: "한남대학교 공지 모아보기 (크롬 확장프로그램) 개발",
@@ -178,7 +204,7 @@ const Projects = () => {
       isClicked: false,
     },
     {
-      id: "7",
+      id: "8",
       img: `${classThumbnail}`,
       title: "모두의 클래스",
       subtitle: "온라인 교육 클래스 플랫폼 개발",
@@ -213,7 +239,7 @@ const Projects = () => {
       isClicked: false,
     },
     {
-      id: "8",
+      id: "9",
       img: `${pThumbnail}`,
       title: "한남대 AR 동아리 게시판",
       subtitle: "한남대학교 AR 동아리 안내 게시판 Demo 개발",
@@ -233,7 +259,7 @@ const Projects = () => {
       isClicked: false,
     },
     {
-      id: "9",
+      id: "10",
       img: `${capThumbnail}`,
       title: "시약 장 콘트롤러 임베디드 시스템",
       subtitle: "[캡스톤 프로젝트] 시약 장 콘트롤러 임베디드 시스템 개발",
