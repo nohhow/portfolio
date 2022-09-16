@@ -11,7 +11,7 @@ import gitLogo from "../../images/github-icon.png";
 import blogLogo from "../../images/blog-icon.png";
 
 function MainPage() {
-    console.log("rendering")
+  console.log("rendering");
 
   return (
     <div>
@@ -73,7 +73,7 @@ function MainPage() {
               </Col>
               <Col sm={4} className="about-me-col align-items-center">
                 <h4 className="half-highlight">주소지</h4>
-                <span>충청북도 충주시</span>
+                <span>서울특별시 관악구</span>
               </Col>
               <Col sm={4} className="about-me-col align-items-center">
                 <h4 className="half-highlight">학력</h4>

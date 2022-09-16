@@ -105,7 +105,7 @@ const Skills = ()=>{
                   <span>중등학교 정교사 2급 정보.컴퓨터</span>
                 </Col>
                 <Col sm={3} className="skill">
-                  <span>TOEIC : 740</span>
+                  <span><del>TOEIC : 740</del></span>
                 </Col>
               </Row>
             </Container>
